@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding does not affect width/height */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("top-view-circular-food-frame.jpg");
+  background-size: cover;
+  color: #0f1010;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  border: 2px solid rgba(16, 16, 16, 0.2); /* Using rgba for transparency */
+  border-radius: 20px;
+  padding: 20px 30px; /* Adjusted for better spacing */
+  background: rgba(255, 255, 255, 0.9); /* Background for better readability */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  color: #0c0b0b;
+} 
+
+.container h1 {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0; /* Adjusted for better spacing */
+}
+
+.container p {
+  font-size: 18px;
+  margin: 15px 0; /* Fixed the incorrect syntax */
+}
+
+.container input {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 10px;
+  width: calc(100% - 30px); /* Accounts for container padding */
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fbfafa;
+}
+
+.container:hover {
+  color: #150101;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Highlight hover with shadow */
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .container {
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 15px 20px;
+  }
+
+  .container h1 {
+    font-size: 22px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .container input {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .container {
+    width: 90%; /* Full width with small margin */
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .container p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .container input {
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+}
